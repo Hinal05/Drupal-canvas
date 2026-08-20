@@ -1,0 +1,23 @@
+{{ attach_library('canvas_theme/card-item') }}
+
+<div class="card-item">
+  {% if image %}
+    <div class="card-item__media">
+      <img src="{{ image }}" alt="{{ image_alt|default('') }}" loading="lazy" />
+    </div>
+  {% endif %}
+
+  <div class="card-item__body">
+    {% if title %}
+      <h3 class="card-item__title">{{ title }}</h3>
+    {% endif %}
+
+    {% if description %}
+      <p class="card-item__description">{{ description }}</p>
+    {% endif %}
+
+    {% if link_url and link_text %}
+      <a href="{{ link_url }}" class="card-item__link">{{ link_text }}</a>
+    {% endif %}
+  </div>
+</div>

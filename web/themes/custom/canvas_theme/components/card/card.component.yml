@@ -1,0 +1,25 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: Card
+status: experimental
+description: 'A responsive grid of cards. Add Card Item components inside it; the grid wraps to a new row once the chosen column count is exceeded.'
+category: Layout
+
+props:
+  type: object
+  properties:
+    columns:
+      type: string
+      title: Columns
+      description: 'How many cards to show per row.'
+      enum:
+        - '2'
+        - '3'
+        - '4'
+      default: '3'
+
+slots:
+  items:
+    title: Cards
+    required: false
+    description: 'Add one or more Card Item components here. Extra items automatically flow onto the next row.'

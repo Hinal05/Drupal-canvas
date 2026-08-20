@@ -1,0 +1,30 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: 'Testimonial Item'
+status: experimental
+description: 'A single testimonial slide with an image, name, designation and description. Place inside a Testimonial component.'
+category: Content
+
+props:
+  type: object
+  properties:
+    image:
+      type: string
+      title: Image URL
+      description: 'Headshot/avatar image for the person.'
+    image_alt:
+      type: string
+      title: Image alt text
+      description: 'Accessible alternative text for the image.'
+    name:
+      type: string
+      title: Name
+      description: 'Name of the person giving the testimonial.'
+    designation:
+      type: string
+      title: Designation
+      description: 'Job title / role / company of the person.'
+    description:
+      type: string
+      title: Description
+      description: 'The testimonial quote.'

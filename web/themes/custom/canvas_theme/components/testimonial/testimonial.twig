@@ -1,0 +1,13 @@
+{{ attach_library('canvas_theme/testimonial') }}
+
+<div class="testimonial-wrapper">
+  <div
+    class="testimonial-slider"
+    data-slides-to-show="{{ slides_to_show|default('1') }}"
+    data-autoplay="{{ autoplay ? 'true' : 'false' }}"
+  >
+    {% if items %}
+      {{ items }}
+    {% endif %}
+  </div>
+</div>

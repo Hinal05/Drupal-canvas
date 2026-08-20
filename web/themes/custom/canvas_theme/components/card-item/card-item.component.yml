@@ -1,0 +1,35 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: 'Card Item'
+status: experimental
+description: 'A single card with an image, title, description and link. Place inside a Card component.'
+category: Content
+
+props:
+  type: object
+  properties:
+    image:
+      type: string
+      title: Image URL
+      description: 'The card image source URL.'
+    image_alt:
+      type: string
+      title: Image alt text
+      description: 'Accessible alternative text for the image.'
+    title:
+      type: string
+      title: Title
+      description: 'The card title.'
+    description:
+      type: string
+      title: Description
+      description: 'Short description or summary text.'
+    link_url:
+      type: string
+      title: Link URL
+      description: 'Optional URL for the card link.'
+    link_text:
+      type: string
+      title: Link text
+      description: 'Label for the link.'
+      default: 'Read more'

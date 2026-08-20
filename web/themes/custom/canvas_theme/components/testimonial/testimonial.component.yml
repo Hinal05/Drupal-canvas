@@ -1,0 +1,30 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: Testimonial
+status: experimental
+description: 'A Slick carousel of testimonials. Add Testimonial Item components inside it.'
+category: Content
+
+props:
+  type: object
+  properties:
+    slides_to_show:
+      type: string
+      title: 'Visible testimonials (desktop)'
+      description: 'How many testimonials to show at once on larger screens.'
+      enum:
+        - '1'
+        - '2'
+        - '3'
+      default: '1'
+    autoplay:
+      type: boolean
+      title: Autoplay
+      description: 'Automatically rotate testimonials.'
+      default: false
+
+slots:
+  items:
+    title: Testimonials
+    required: false
+    description: 'Add one or more Testimonial Item components here.'

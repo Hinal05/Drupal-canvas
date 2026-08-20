@@ -1,0 +1,32 @@
+.testimonial-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.testimonial-slider .slick-slide {
+  padding: 0 16px;
+}
+
+.testimonial-slider .slick-dots {
+  bottom: -40px;
+}
+
+.testimonial-slider .slick-prev,
+.testimonial-slider .slick-next {
+  width: 32px;
+  height: 32px;
+}
+
+.testimonial-slider .slick-prev:before,
+.testimonial-slider .slick-next:before {
+  color: #2e2d2d;
+  font-size: 32px;
+}
+
+/* Before Slick JS initializes, stack items so the page still reads fine. */
+.testimonial-slider:not(.slick-initialized) {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

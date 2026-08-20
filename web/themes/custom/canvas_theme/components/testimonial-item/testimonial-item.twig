@@ -1,0 +1,20 @@
+{{ attach_library('canvas_theme/testimonial-item') }}
+
+<div class="testimonial-item">
+  <p class="testimonial-item__description">&ldquo;{{ description }}&rdquo;</p>
+
+  <div class="testimonial-item__meta">
+    {% if image %}
+      <img class="testimonial-item__avatar" src="{{ image }}" alt="{{ image_alt|default('') }}" loading="lazy" />
+    {% endif %}
+
+    <div class="testimonial-item__person">
+      {% if name %}
+        <div class="testimonial-item__name">{{ name }}</div>
+      {% endif %}
+      {% if designation %}
+        <div class="testimonial-item__designation">{{ designation }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>

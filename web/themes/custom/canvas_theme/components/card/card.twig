@@ -1,0 +1,7 @@
+{{ attach_library('canvas_theme/card') }}
+
+<div class="card-grid card-grid--cols-{{ columns|default('3') }}">
+  {% if items %}
+    {{ items }}
+  {% endif %}
+</div>

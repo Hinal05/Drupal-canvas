@@ -1,0 +1,35 @@
+.card-grid {
+  display: grid;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Columns prop drives the grid; extra items naturally wrap to the next row. */
+.card-grid--cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-grid--cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-grid--cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 992px) {
+  .card-grid--cols-3,
+  .card-grid--cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid--cols-2,
+  .card-grid--cols-3,
+  .card-grid--cols-4 {
+    grid-template-columns: 1fr;
+  }
+}

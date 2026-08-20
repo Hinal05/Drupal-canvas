@@ -2,3 +2,63 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+
+card:
+  css:
+    component:
+      components/card/card.css: {}
+
+card-item:
+  css:
+    component:
+      components/card-item/card-item.css: {}
+
+# Drupal 11 core ships jQuery 4.x, which removed utility methods (e.g. $.type)
+# that Slick 1.8.1 still depends on internally. jQuery Migrate restores them.
+# Without this, Slick throws "i.type is not a function" and never initializes.
+jquery-migrate:
+  remote: https://github.com/jquery/jquery-migrate
+  version: '3.5.2'
+  license:
+    name: MIT
+    url: https://github.com/jquery/jquery-migrate/blob/main/LICENSE.txt
+    gpl-compatible: true
+  js:
+    https://code.jquery.com/jquery-migrate-3.5.2.min.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+
+# Slick slider, loaded from CDN.
+slick:
+  remote: https://github.com/kenwheeler/slick
+  version: '1.8.1'
+  license:
+    name: MIT
+    url: https://github.com/kenwheeler/slick/blob/master/LICENSE
+    gpl-compatible: true
+  css:
+    theme:
+      https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: { type: external, minified: true }
+      https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css: { type: external, minified: true }
+  js:
+    https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - canvas_theme/jquery-migrate
+
+testimonial:
+  css:
+    component:
+      components/testimonial/testimonial.css: {}
+  js:
+    js/testimonial.js: {}
+  dependencies:
+    - core/jquery
+    - core/once
+    - core/drupal
+    - canvas_theme/slick
+
+testimonial-item:
+  css:
+    component:
+      components/testimonial-item/testimonial-item.css: {}
