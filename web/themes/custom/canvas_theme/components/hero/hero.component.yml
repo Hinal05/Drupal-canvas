@@ -1,0 +1,55 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: Hero
+status: experimental
+description: Hero section component with title, description and call-to-action button
+category: Layout
+
+variants:
+  default:
+    title: Default
+    description: Standard hero section with title, description and CTA button
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+      description: Main hero title
+      examples:
+        - "Your trusted Drupal experts — here to build what matters"
+    title_highlight:
+      type: string
+      title: Title Highlight Text
+      description: Text to highlight in the title
+      examples:
+        - "Drupal"
+    description:
+      type: string
+      title: Description
+      description: Hero description text
+    button_text:
+      type: string
+      title: Button Text
+      description: Text for the call-to-action button
+    button_url:
+      type: string
+      title: Button URL
+      description: Link for the call-to-action button
+    button_icon:
+      type: string
+      title: Button Icon
+      description: Icon for the button (SVG or image URL)
+    background_color:
+      type: string
+      title: Background Color
+      description: "Background color for the hero section (default: #f9f7f6)"
+    title_color:
+      type: string
+      title: Title Color
+      description: "Color for the main title (default: #2e2d2d)"
+    title_highlight_color:
+      type: string
+      title: Title Highlight Color
+      description: "Color for the highlighted text in title (default: #6b94ec)"

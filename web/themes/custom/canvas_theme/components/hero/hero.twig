@@ -1,0 +1,34 @@
+<section class="hero"{% if background_color %} style="background-color: {{ background_color }};"{% endif %}>
+  <div class="hero__container">
+    {% if title %}
+      <div class="hero__content">
+        <h1 class="hero__title"{% if title_color %} style="color: {{ title_color }};"{% endif %}>
+          {% if title_highlight %}
+            {{ title|replace({(title_highlight): '<span class="hero__title-highlight" style="color: ' ~ (title_highlight_color|default('#6b94ec')) ~ ';">' ~ title_highlight ~ '</span>'})|raw }}
+          {% else %}
+            {{ title }}
+          {% endif %}
+        </h1>
+
+        {% if description %}
+          <p class="hero__description"{% if description_color %} style="color: {{ description_color }};"{% endif %}>
+            {{ description }}
+          </p>
+        {% endif %}
+
+        {% if button_text %}
+          <a href="{{ button_url|default('#') }}" class="hero__button"{% if button_background_color %} style="background-color: {{ button_background_color }};"{% endif %}>
+            <span class="hero__button-text"{% if button_text_color %} style="color: {{ button_text_color }};"{% endif %}>
+              {{ button_text }}
+            </span>
+            {% if button_icon %}
+              <span class="hero__button-icon">
+                <img src="{{ button_icon }}" alt="" />
+              </span>
+            {% endif %}
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,18 @@
+name: Canvas Theme
+type: theme
+description: 'Custom theme holding Drupal Canvas code/SDC components.'
+core_version_requirement: ^10 || ^11
+base theme: stark
+libraries:
+  - canvas_theme/global-styling
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  footer: Footer

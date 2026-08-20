@@ -1,0 +1,48 @@
+# Composer-managed dependencies — never commit, always reinstalled via composer.lock.
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+/drush/contrib/
+
+# Drupal core scaffold files (recreated by composer's core-composer-scaffold plugin).
+/web/autoload.php
+/web/index.php
+/web/robots.txt
+/web/update.php
+/web/.htaccess
+/web/sites/*/settings.php
+/web/sites/*/settings.local.php
+/web/sites/*/services.yml
+
+# Generated/user-uploaded files.
+/web/sites/*/files/
+/web/sites/simpletest/
+
+# Config auto-export target used by drush cex if you switch away from config/sync.
+/config/sync/*
+!/config/sync/.gitkeep
+
+# DDEV local state (keep .ddev/config.yaml + custom commands, ignore local-only bits).
+.ddev/.*
+.ddev/db_snapshots/
+.ddev/xhprof/
+.ddev/traefik/
+!.ddev/.gitignore
+
+# PHP / Composer tooling caches.
+/vendor-bin/
+.phpunit.result.cache
+/phpunit.xml
+
+# Node / built JS assets for any theme or Canvas-related UI you build locally.
+node_modules/
+npm-debug.log
+
+# Editor/OS cruft.
+.idea/
+.vscode/
+*.swp
+.DS_Store

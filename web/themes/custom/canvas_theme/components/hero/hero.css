@@ -1,0 +1,60 @@
+.hero {
+  background-color: #f9f7f6;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  min-height: auto;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.hero__title {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #2e2d2d;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+.hero__button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background-color: #2e2d2d;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  background-color: #1a1a1a;
+  transform: translateY(-1px);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0;
+    border-radius: 20px;
+  }
+
+  .hero__title {
+    font-size: 48px;
+  }
+}
