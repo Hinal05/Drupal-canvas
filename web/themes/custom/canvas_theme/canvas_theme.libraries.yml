@@ -13,6 +13,16 @@ card-item:
     component:
       components/card-item/card-item.css: {}
 
+card2:
+  css:
+    component:
+      components/card2/card2.css: {}
+
+product-detail:
+  css:
+    component:
+      components/product-detail/product-detail.css: {}
+
 # Drupal 11 core ships jQuery 4.x, which removed utility methods (e.g. $.type)
 # that Slick 1.8.1 still depends on internally. jQuery Migrate restores them.
 # Without this, Slick throws "i.type is not a function" and never initializes.

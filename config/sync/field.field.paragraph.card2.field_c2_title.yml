@@ -1,0 +1,19 @@
+uuid: 50b5bc55-c81d-43f6-bef7-d91c03e7f051
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c2_title
+    - paragraphs.paragraphs_type.card2
+id: paragraph.card2.field_c2_title
+field_name: field_c2_title
+entity_type: paragraph
+bundle: card2
+label: Title
+description: ''
+required: false
+translatable: null
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

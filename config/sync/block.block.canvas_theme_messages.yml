@@ -1,0 +1,22 @@
+uuid: 7f4bbb64-495f-4d04-8cab-9c7f133cd65b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - canvas_theme
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: canvas_theme_messages
+theme: canvas_theme
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

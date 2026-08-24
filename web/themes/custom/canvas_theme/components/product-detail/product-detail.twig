@@ -1,0 +1,30 @@
+{{ attach_library('canvas_theme/product-detail') }}
+
+<article class="product-detail">
+  {% if image %}
+    <div class="product-detail__media">
+      <img src="{{ image }}" alt="{{ image_alt|default('') }}" loading="lazy" />
+    </div>
+  {% endif %}
+
+  <div class="product-detail__body">
+    {% if title %}
+      <h1 class="product-detail__title">{{ title }}</h1>
+    {% endif %}
+
+    {% if created_date or author_name %}
+      <div class="product-detail__meta">
+        {% if author_name %}
+          <span class="product-detail__author">By {{ author_name }}</span>
+        {% endif %}
+        {% if created_date %}
+          <span class="product-detail__date">{{ created_date|date('F j, Y') }}</span>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if body %}
+      <div class="product-detail__description">{{ body|raw }}</div>
+    {% endif %}
+  </div>
+</article>

@@ -1,0 +1,11 @@
+uuid: a5a7ae13-d939-4231-9d86-2994e23bf65d
+langcode: en
+status: true
+dependencies: {  }
+name: Product
+type: product
+description: 'A product with a full detail page and a Card2 teaser for listings.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -13,17 +13,19 @@
 /web/robots.txt
 /web/update.php
 /web/.htaccess
-/web/sites/*/settings.php
+# settings.php IS tracked: it holds no credentials here (DB connection comes
+# from DDEV's auto-generated settings.ddev.php, included conditionally below)
+# and carries the shared config_sync_directory setting every environment needs.
 /web/sites/*/settings.local.php
+/web/sites/*/settings.ddev.php
 /web/sites/*/services.yml
 
 # Generated/user-uploaded files.
 /web/sites/*/files/
 /web/sites/simpletest/
 
-# Config auto-export target used by drush cex if you switch away from config/sync.
-/config/sync/*
-!/config/sync/.gitkeep
+# Site configuration (drush cex/cim target) IS tracked — it's the source of
+# truth for content types, fields, views, Canvas components/templates, etc.
 
 # DDEV local state (keep .ddev/config.yaml + custom commands, ignore local-only bits).
 .ddev/.*

@@ -1,0 +1,48 @@
+uuid: 762fa27d-2579-4cfb-a17a-413eb18319b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.canvas_theme.card2
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product.field_card2
+    - field.field.paragraph.card2.field_c2_description
+    - field.field.paragraph.card2.field_c2_image
+    - field.field.paragraph.card2.field_c2_link
+    - field.field.paragraph.card2.field_c2_title
+    - image.style.canvas_parametrized_width
+    - node.type.product
+    - paragraphs.paragraphs_type.card2
+  module:
+    - file
+    - node
+    - paragraphs
+id: node.product.teaser
+content_entity_type_id: node
+content_entity_type_bundle: product
+content_entity_type_view_mode: teaser
+component_tree:
+  '0:279a782a-187e-4077-96ca-91ea1a0b6c21':
+    parent_uuid: null
+    slot: null
+    uuid: 279a782a-187e-4077-96ca-91ea1a0b6c21
+    component_id: sdc.canvas_theme.card2
+    component_version: dedb724eae829055
+    inputs:
+      image:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:product␝field_card2␞␟entity␜␜entity:paragraph:card2␝field_c2_image␞␟src'
+      image_alt:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:product␝field_card2␞␟entity␜␜entity:paragraph:card2␝field_c2_image␞␟alt'
+      title:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:product␝field_card2␞␟entity␜␜entity:paragraph:card2␝field_c2_title␞␟value'
+      description:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:product␝field_card2␞␟entity␜␜entity:paragraph:card2␝field_c2_description␞␟value'
+      link_url:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:product␝field_card2␞␟entity␜␜entity:paragraph:card2␝field_c2_link␞␟url'
+    label: null
+exposed_slots: {  }

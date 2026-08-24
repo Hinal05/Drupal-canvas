@@ -1,0 +1,47 @@
+.product-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.product-detail__media {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  margin-bottom: 32px;
+}
+
+.product-detail__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-detail__title {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #2e2d2d;
+  margin: 0 0 16px;
+  letter-spacing: -1px;
+}
+
+.product-detail__meta {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  color: #7a7a7a;
+  margin-bottom: 32px;
+}
+
+.product-detail__description {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #3a3a3a;
+}
+
+.product-detail__description p {
+  margin: 0 0 1em;
+}

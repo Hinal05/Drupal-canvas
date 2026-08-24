@@ -1,0 +1,30 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: Card2
+status: experimental
+description: 'A product teaser tile with image, title and short description, linking to the full detail page. Used on listing pages and Latest Products.'
+category: Content
+
+props:
+  type: object
+  properties:
+    image:
+      type: string
+      title: Image URL
+      description: 'The product image source URL.'
+    image_alt:
+      type: string
+      title: Image alt text
+      description: 'Accessible alternative text for the image.'
+    title:
+      type: string
+      title: Title
+      description: 'The product title.'
+    description:
+      type: string
+      title: Description
+      description: 'Short description shown on the teaser.'
+    link_url:
+      type: string
+      title: Link URL
+      description: 'URL to the product detail page. The whole card becomes clickable when set.'

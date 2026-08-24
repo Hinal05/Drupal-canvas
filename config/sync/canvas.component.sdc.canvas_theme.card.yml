@@ -1,0 +1,33 @@
+uuid: 501c9bca-315b-4eed-8c7e-a716461730c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - canvas_theme
+active_version: 1ce230983bcf48f8
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        columns:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions:
+        items:
+          title: Cards
+          description: 'Add one or more Card Item components here. Extra items automatically flow onto the next row.'
+label: Card
+id: sdc.canvas_theme.card
+provider: canvas_theme
+source: sdc
+source_local_id: 'canvas_theme:card'

@@ -1,0 +1,47 @@
+uuid: d7291456-f559-427a-8415-0037b16e4161
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.canvas_theme.product-detail
+    - core.entity_view_mode.node.full
+    - field.field.node.product.field_body
+    - field.field.node.product.field_image
+    - image.style.canvas_parametrized_width
+    - node.type.product
+  module:
+    - file
+    - node
+    - user
+id: node.product.full
+content_entity_type_id: node
+content_entity_type_bundle: product
+content_entity_type_view_mode: full
+component_tree:
+  '0:f83e772e-7c9a-4cb4-ab57-44e77eebfd9f':
+    parent_uuid: null
+    slot: null
+    uuid: f83e772e-7c9a-4cb4-ab57-44e77eebfd9f
+    component_id: sdc.canvas_theme.product-detail
+    component_version: 0d2ea2f39804383f
+    inputs:
+      title:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:product␝title␞␟value'
+      image:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:product␝field_image␞␟src'
+      image_alt:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:product␝field_image␞␟alt'
+      body:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:product␝field_body␞␟processed'
+      created_date:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:product␝created␞␟value'
+      author_name:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:product␝uid␞␟entity␜␜entity:user␝name␞␟value'
+    label: null
+exposed_slots: {  }

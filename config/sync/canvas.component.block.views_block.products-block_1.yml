@@ -1,0 +1,26 @@
+uuid: 466a637a-824e-4f77-8479-a38186630415
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.products
+  module:
+    - views
+active_version: c60a3e58d1eb5a8c
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:products-block_1'
+        label: 'Products: Latest Products'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Products: Latest Products'
+id: block.views_block.products-block_1
+provider: views
+source: block
+source_local_id: 'views_block:products-block_1'

@@ -1,0 +1,10 @@
+uuid: 2664c272-e871-4d3e-826d-8227caa5a70e
+langcode: en
+status: true
+dependencies: {  }
+id: card2
+label: Card2
+icon_uuid: null
+icon_default: null
+description: 'A teaser card with image, title, short description and link. Used on listing pages and Latest Products.'
+behavior_plugins: {  }

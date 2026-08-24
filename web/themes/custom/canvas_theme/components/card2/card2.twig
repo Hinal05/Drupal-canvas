@@ -1,0 +1,21 @@
+{{ attach_library('canvas_theme/card2') }}
+
+{% set tag = link_url ? 'a' : 'div' %}
+
+<{{ tag }}{% if link_url %} href="{{ link_url }}"{% endif %} class="card2">
+  {% if image %}
+    <div class="card2__media">
+      <img src="{{ image }}" alt="{{ image_alt|default('') }}" loading="lazy" />
+    </div>
+  {% endif %}
+
+  <div class="card2__body">
+    {% if title %}
+      <h3 class="card2__title">{{ title }}</h3>
+    {% endif %}
+
+    {% if description %}
+      <p class="card2__description">{{ description }}</p>
+    {% endif %}
+  </div>
+</{{ tag }}>

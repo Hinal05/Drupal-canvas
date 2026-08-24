@@ -1,0 +1,22 @@
+uuid: ec00e453-7955-40c2-b91d-427c7dd668c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - canvas_theme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: canvas_theme_breadcrumbs
+theme: canvas_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

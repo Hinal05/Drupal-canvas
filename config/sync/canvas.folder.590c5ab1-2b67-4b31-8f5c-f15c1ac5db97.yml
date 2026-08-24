@@ -1,0 +1,29 @@
+uuid: 590c5ab1-2b67-4b31-8f5c-f15c1ac5db97
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.canvas_theme.card
+    - canvas.component.sdc.canvas_theme.card-item
+    - canvas.component.sdc.canvas_theme.card2
+    - canvas.component.sdc.canvas_theme.hero
+    - canvas.component.sdc.canvas_theme.product-detail
+    - canvas.component.sdc.canvas_theme.testimonial
+    - canvas.component.sdc.canvas_theme.testimonial-item
+    - canvas.component.sdc.navigation.message
+    - canvas.component.sdc.navigation.title
+    - canvas.component.sdc.olivero.teaser
+name: Other
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.canvas_theme.card
+  - sdc.canvas_theme.card-item
+  - sdc.canvas_theme.card2
+  - sdc.canvas_theme.hero
+  - sdc.canvas_theme.product-detail
+  - sdc.canvas_theme.testimonial
+  - sdc.canvas_theme.testimonial-item
+  - sdc.navigation.message
+  - sdc.navigation.title
+  - sdc.olivero.teaser
